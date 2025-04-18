@@ -1,0 +1,135 @@
+<!-- 
+  Author: Noorulhuda Khamees
+  Date: April 18, 2025
+  Description: Personal Portfolio Website - HTML Structure
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noorulhuda's Portfolio</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Styles -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+
+</head>
+
+<!-- Theme toggle button (Dark/Light mode switcher) -->
+<button id="theme-toggle" title="Toggle Theme">🌙</button>
+
+<body>
+  <!-- Scroll to Top Button (will be moved into <body>) -->
+      <button id="scrollTopBtn" title="Go to top">⬆️</button>
+  <!-- Header Section -->
+  <header data-aos="fade-down">
+    <h1>Noorulhuda Khamees</h1>
+    <p><span id="animated-fade-text">Loading...</span></p>
+
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about" class="section" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Noorulhuda, a passionate software engineering graduate with a strong background in AI and full-stack development. I love building clean, scalable, and user-friendly applications.
+      </p>
+      <a href="resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+    </section>
+
+    <!-- Projects Section with Filter/Search -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <div id="project-filters">
+        <input type="text" id="searchBox" placeholder="Search projects..." />
+        <select id="categoryFilter">
+          <option value="All">All</option>
+          <option value="Android">Android</option>
+          <option value="AI">AI</option>
+          <option value="Web">Web</option>
+        </select>
+      </div>
+      <h2>Projects</h2>
+      <div id="projects-container" class="projects-grid"></div>
+    </section>
+
+    <!-- Contact Section with Email Form -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact</h2>
+      <form action="https://formsubmit.co/noor.lian@yahoo.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Blog Section (Loaded Dynamically) -->
+    <section id="blog" class="section" data-aos="fade-up">
+      <h2>Blog</h2>
+      <div id="blog-posts"></div>
+    </section>
+
+  </div> <!-- End .container -->
+
+  <!-- Footer Section -->
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Noorulhuda Khamees</p>
+    <div class="social-icons">
+      <a href="https://github.com/Noorulhuda87" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/noor-ismael-90a620116/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:noor.lian@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- Page Loader Spinner -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- AOS JavaScript (for animations on scroll) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Main JS file -->
+  <script src="script.js"></script>
+
+  <!-- Live Chat Widget from Tawk.to -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/680258d3168d7c19107fb8b2/1ip4ilugq';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <script src="script.js"></script>
+
+  <!-- End Tawk.to Script -->
+
+</body>
+</html>
