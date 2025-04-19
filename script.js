@@ -189,8 +189,8 @@ function showFadePhrase(index) {
     // Show next after 2.5 seconds
     setTimeout(() => {
       showFadePhrase(index + 1);
-    }, 2500);
-  }, 500);
+    }, 2000);
+  }, 250);
 }
 
 // Make sure DOM is ready first
