@@ -13,23 +13,18 @@ AOS.init();
 // 2. Sample Project Data to be rendered
 // ===========================================
 const projects = [
+ 
   {
-    title: "Stock Info App",
-    description: "An Android app to store, update, and view stock data using Room DB and MVVM architecture.",
+    title: "Android Products Manager",
+    description: "An Android application for managing product inventory using Room DB and Jetpack Compose.",
     category: "Android",
-    link: "#"
-  },
-  {
-    title: "Collision Predictor",
-    description: "A machine learning web application that predicts accident severity using real Toronto police data.",
-    category: "AI",
-    link: "#"
+    link: "https://github.com/Noorulhuda87/Android_Products_Manager/releases"
   },
   {
     title: "Shopify Store",
     description: "A complete e-commerce website built using Shopify, featuring smart collections and product filtering.",
     category: "Web",
-    link: "#"
+    link: "https://loohoocuteshop.myshopify.com/"
   },
   {
     title: "Grammar Correction App",
@@ -38,6 +33,7 @@ const projects = [
     link: "https://noorulhuda-grammar-correction.streamlit.app/"
   }
 ];
+
 
 
 
