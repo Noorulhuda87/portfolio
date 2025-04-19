@@ -13,6 +13,12 @@ AOS.init();
 // 2. Sample Project Data to be rendered
 // ===========================================
 const projects = [
+  {
+    title: "Grammar Correction App",
+    description: "A real-time grammar correction tool built using OpenAI's API and Streamlit.",
+    category: "AI",
+    link: "https://noorulhuda-grammar-correction.streamlit.app/"
+  },
  
   {
     title: "Android Products Manager",
@@ -25,13 +31,8 @@ const projects = [
     description: "A complete e-commerce website built using Shopify, featuring smart collections and product filtering.",
     category: "Web",
     link: "https://loohoocuteshop.myshopify.com/"
-  },
-  {
-    title: "Grammar Correction App",
-    description: "A real-time grammar correction tool built using OpenAI's API and Streamlit.",
-    category: "AI",
-    link: "https://noorulhuda-grammar-correction.streamlit.app/"
   }
+  
 ];
 
 
